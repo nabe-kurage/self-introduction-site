@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import "./App.css";
+// Switchは今なくて、Routes を使っておなじことができる
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import profile from "./pages/profile";
+// Nextの方が楽かも。わざわざrouter-dom入れるの考えたら．
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="root">
+            {/* <img src={logo} className="App-logo" alt="logo" /> */}
+            <h1>my site</h1>
+            <ul className="linkList">
+                <li className="linkListItem">
+                    <a className="link" href="/self-introduction-site/profile">
+                        profile
+                    </a>
+                </li>
+                <li className="linkListItem">
+                    <a className="link" href="/self-introduction-site/works">
+                        works
+                    </a>
+                </li>
+            </ul>
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="/self-introduction-site/profile"
+                        component={profile}
+                    />
+                    <Route
+                        path="/self-introduction-site/works"
+                        component={profile}
+                    />
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
