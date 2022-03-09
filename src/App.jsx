@@ -2,8 +2,8 @@
 import "./App.css";
 // Switchは今なくて、Routes を使っておなじことができる
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import profile from "./pages/profile";
-// Nextの方が楽かも。わざわざrouter-dom入れるの考えたら．
+import { Profile } from "./pages/Profile";
+import { Work } from "./pages/Work";
 
 function App() {
     return (
@@ -22,15 +22,16 @@ function App() {
                     </a>
                 </li>
             </ul>
+
             <BrowserRouter>
                 <Routes>
                     <Route
                         path="/self-introduction-site/profile"
-                        component={profile}
+                        element={<Profile />}
                     />
                     <Route
                         path="/self-introduction-site/works"
-                        component={profile}
+                        element={<Work />}
                     />
                 </Routes>
             </BrowserRouter>
