@@ -1,3 +1,13 @@
+import profile from "../profileIllustration.jpg";
+
 export const Profile = () => {
-    return <div className="rpageRoot">Profile</div>;
+    return (
+        <div className="rpageRoot">
+            <h2>Profile</h2>
+            <img src={profile} className="App-logo" alt="logo" />
+            <p>name:なべくら</p>
+            <p>description</p>
+            <p>links</p>
+        </div>
+    );
 };

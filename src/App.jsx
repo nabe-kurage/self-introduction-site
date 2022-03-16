@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 import "./App.css";
 // Switchは今なくて、Routes を使っておなじことができる
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -8,7 +7,6 @@ import { Work } from "./pages/Work";
 function App() {
     return (
         <div className="root">
-            {/* <img src={logo} className="App-logo" alt="logo" /> */}
             <h1>my site</h1>
             <ul className="linkList">
                 <li className="linkListItem">
