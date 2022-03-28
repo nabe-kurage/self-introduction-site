@@ -8,6 +8,7 @@ function App() {
     return (
         <div className="root">
             <h1>my site</h1>
+            <p>test</p>
             <ul className="linkList">
                 <li className="linkListItem">
                     <a className="link" href="/self-introduction-site/profile">
@@ -17,6 +18,24 @@ function App() {
                 <li className="linkListItem">
                     <a className="link" href="/self-introduction-site/works">
                         works
+                    </a>
+                </li>
+
+                <li className="linkListItem">
+                    <a className="link" href="/self-introduction-site/">
+                        top
+                    </a>
+                </li>
+
+                <li className="linkListItem">
+                    <a className="link" href="/">
+                        top2
+                    </a>
+                </li>
+
+                <li className="linkListItem">
+                    <a className="link" href="/works">
+                        works2
                     </a>
                 </li>
             </ul>
