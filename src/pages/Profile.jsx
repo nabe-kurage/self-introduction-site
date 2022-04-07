@@ -8,6 +8,10 @@ export const Profile = () => {
             <p>name:なべくら</p>
             <p>description</p>
             <p>links</p>
+            <ul>
+                <li>link1</li>
+                <li>link2</li>
+            </ul>
         </div>
     );
 };
